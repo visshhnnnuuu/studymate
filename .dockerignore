@@ -1,0 +1,7 @@
+data/auth.json
+data/chat-history.json
+__pycache__
+.env
+*.log
+.git
+vercel

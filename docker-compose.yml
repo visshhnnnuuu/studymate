@@ -1,0 +1,16 @@
+services:
+  studymate:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      PORT: 8080
+      RAG_URL: http://127.0.0.1:8090
+    volumes:
+      - studymate_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  studymate_data:

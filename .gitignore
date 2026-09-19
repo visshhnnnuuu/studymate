@@ -1,0 +1,20 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Runtime user data and private study materials
+data/auth.json
+data/chat-history.json
+data/uploads/
+data/*.db
+
+# Local caches and logs
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+
+# Local test artifacts
+.vercel/
+.tmp/
